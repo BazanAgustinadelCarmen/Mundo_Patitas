@@ -1,0 +1,13 @@
+// Array de objetos: cada objeto representa un producto del catálogo.
+export const productos = [
+  { id: 1, nombre: "Pelota mordillo", precio: 4200, categoria: "juguetes", descripcion: "Una pelota divertida para jugar y compartir.", imagen: "https://images.unsplash.com/photo-1535294435445-d7249524ef2e?auto=format&fit=crop&w=700&q=80", etiqueta: "Más elegido" },
+  { id: 2, nombre: "Ratón de tela", precio: 2800, categoria: "juguetes", descripcion: "Un compañero de juego para gatos curiosos.", imagen: "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=700&q=80", etiqueta: "Para gatos" },
+  { id: 3, nombre: "Collar ajustable", precio: 5600, categoria: "accesorios", descripcion: "Cómodo y práctico para salir de paseo.", imagen: "https://images.unsplash.com/photo-1589941013453-ec89f33b5e95?auto=format&fit=crop&w=700&q=80", etiqueta: "Nuevo" },
+  { id: 4, nombre: "Correa de paseo", precio: 6900, categoria: "accesorios", descripcion: "Ideal para caminar y descubrir juntos.", imagen: "https://images.unsplash.com/photo-1551717743-49959800b1f6?auto=format&fit=crop&w=700&q=80", etiqueta: "" },
+  { id: 5, nombre: "Alimento balanceado", precio: 12500, categoria: "alimentos", descripcion: "Una opción para acompañar su alimentación.", imagen: "https://images.unsplash.com/photo-1589924691995-400dc9ecc119?auto=format&fit=crop&w=700&q=80", etiqueta: "Favorito" },
+  { id: 6, nombre: "Premios crocantes", precio: 3900, categoria: "alimentos", descripcion: "Pequeños premios para momentos especiales.", imagen: "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&w=700&q=80", etiqueta: "" },
+  { id: 7, nombre: "Cama nube", precio: 18900, categoria: "descanso", descripcion: "Un rinconcito suave para descansar.", imagen: "https://images.unsplash.com/photo-1541599540903-216a46ca1dc0?auto=format&fit=crop&w=700&q=80", etiqueta: "Confort" },
+  { id: 8, nombre: "Manta suave", precio: 8400, categoria: "descanso", descripcion: "Una mantita abrigada para sus siestas.", imagen: "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=700&q=80", etiqueta: "" },
+  { id: 9, nombre: "Rascador pequeño", precio: 14900, categoria: "accesorios", descripcion: "Un espacio propio para que tu gato juegue.", imagen: "https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=700&q=80", etiqueta: "Para gatos" },
+  { id: 10, nombre: "Huesito juguetón", precio: 3500, categoria: "juguetes", descripcion: "Un juguete liviano para sumar diversión.", imagen: "https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?auto=format&fit=crop&w=700&q=80", etiqueta: "" }
+];

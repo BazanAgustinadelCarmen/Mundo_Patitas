@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Mundo Patitas: productos para perros y gatos.">
+<title>Mundo Patitas | Un mundo de cariño</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilos.css">
+<script type="module" src="main.js"></script>
+</head>
+<body>
+<header class="header" id="inicio">
+  <div class="barra">
+    <a class="logo" href="#inicio"><span>🐾</span> Mundo <b>Patitas</b></a>
+    <button id="boton-menu" class="menu" aria-label="Abrir menú">☰</button>
+    <nav id="navegacion">
+      <a class="enlace-nav activo" href="#inicio">Inicio</a>
+      <a class="enlace-nav" href="#catalogo">Productos</a>
+      <a class="enlace-nav" href="#favoritos">Mis favoritos <span id="cantidad-favoritos-nav">0</span></a>
+      <a class="enlace-nav" href="#carrito">Mi carrito <span id="cantidad-carrito-nav">0</span></a>
+      <a class="enlace-nav" href="#contacto">Contacto</a>
+    </nav>
+    <button id="boton-tema" class="tema" aria-label="Cambiar tema">🌙</button>
+  </div>
+</header>
+
+<main>
+<section class="portada seccion">
+  <div>
+    <span class="etiqueta">🐶🐱 Un mundo lleno de amor</span>
+    <h1>Todo lo que tus<br><em>patitas necesitan</em></h1>
+    <p>Accesorios, juguetes y productos elegidos con cariño para acompañar cada aventura de tus mejores amigos.</p>
+    <a class="boton principal" href="#catalogo">Explorar productos →</a>
+    <p class="frase">💛 Hecho para quienes nos alegran los días.</p>
+  </div>
+  <div class="foto-portada">
+    <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=1000&q=85" alt="Perro mirando con alegría">
+    <span class="burbuja">❤️ Mucho cariño</span>
+  </div>
+</section>
+
+<section class="beneficios">
+  <div>🚚 <span><b>Pedidos cuidados</b><small>Preparamos cada pedido</small></span></div>
+  <div>🐾 <span><b>Para perros y gatos</b><small>Opciones para cada mascota</small></span></div>
+  <div>💗 <span><b>Elegido con amor</b><small>Productos para mimarlos</small></span></div>
+</section>
+
+<section class="seccion" id="catalogo">
+  <div class="titulo-seccion"><span> NUESTRO CATÁLOGO</span><h2>Encontrá algo especial</h2><p>Elegí lo que más le guste a tu compañero.</p></div>
+  <div class="herramientas">
+    <label class="buscador">⌕ <input id="busqueda" type="search" placeholder="Buscar alimento, juguete, collar..."><button id="limpiar-busqueda" type="button">×</button></label>
+    <div id="filtros-categorias" class="filtros">
+      <button class="filtro activo" data-categoria="todos">Todos</button>
+      <button class="filtro" data-categoria="juguetes">Juguetes</button>
+      <button class="filtro" data-categoria="accesorios">Accesorios</button>
+      <button class="filtro" data-categoria="alimentos">Alimentos</button>
+      <button class="filtro" data-categoria="descanso">Descanso</button>
+    </div>
+  </div>
+  <p id="texto-resultados" class="resultado" aria-live="polite"></p>
+  <div id="grilla-productos" class="grilla"></div>
+  <div id="sin-resultados" class="vacio" hidden><span>🐾</span><h3>No encontramos productos</h3><p>Probá con otra palabra o categoría.</p></div>
+</section>
+
+<section class="franja">
+  <div><span>UN DETALLE HACE LA DIFERENCIA</span><h2>Pequeños mimos, grandes momentos.</h2><p>Porque ellos hacen mucho por nosotros, también merecen lo mejor.</p></div>
+  <div class="dibujos">🐕 🐈 🦴</div>
+</section>
+
+<section class="seccion" id="favoritos">
+  <div class="titulo-seccion"><span>TU LISTA PERSONAL</span><h2>Mis favoritos <em>♥</em></h2><p>Acá aparecen los productos que marcaste con el corazón.</p></div>
+  <div id="grilla-favoritos" class="grilla"></div>
+  <div id="favoritos-vacios" class="vacio"><span>♡</span><h3>Todavía no guardaste favoritos</h3><p>Presioná el corazón de un producto y lo vas a encontrar acá.</p><a class="boton secundario" href="#catalogo">Ver productos</a></div>
+</section>
+
+<section class="seccion" id="carrito">
+  <div class="titulo-seccion"><span>TU PEDIDO</span><h2>Mi carrito 🛒</h2><p>Revisá los productos que elegiste antes de confirmar.</p></div>
+  <div class="zona-carrito">
+    <div>
+      <div id="lista-carrito" class="lista-carrito"></div>
+      <div id="carrito-vacio" class="vacio"><span>🧺</span><h3>Tu carrito está vacío</h3><p>Cuando agregues productos, los vas a ver en esta sección.</p><a class="boton secundario" href="#catalogo">Ir al catálogo</a></div>
+    </div>
+    <aside id="resumen-carrito" class="resumen" hidden>
+      <h3>Resumen de compra</h3>
+      <p>Subtotal <b id="subtotal">$ 0,00</b></p><p>IVA (21%) <b id="iva">$ 0,00</b></p>
+      <p class="total">Total <b id="total">$ 0,00</b></p>
+      <a class="boton principal ancho" href="#contacto">Continuar con el pedido →</a>
+      <button id="vaciar-carrito" class="vaciar">Vaciar carrito</button>
+    </aside>
+  </div>
+</section>
+
+<section class="seccion contacto" id="contacto">
+  <div><div class="titulo-seccion"><span>ÚLTIMO PASO</span><h2>Confirmá tu pedido</h2><p>Completá tus datos para preparar tu compra. Es una demostración académica: no se realiza ningún pago real.</p></div><div class="perrito">🐶 💗</div></div>
+  <form id="formulario-pedido" class="formulario" novalidate>
+    <h3>Datos de contacto</h3>
+    <div class="campo"><label for="nombre">Nombre y apellido</label><input id="nombre" type="text" placeholder="Ej.: Ana Pérez"><small id="error-nombre" class="error"></small></div>
+    <div class="campo"><label for="email">Correo electrónico</label><input id="email" type="email" placeholder="Ej.: ana@gmail.com"><small id="error-email" class="error"></small></div>
+    <div class="campo"><label for="telefono">Teléfono</label><input id="telefono" type="tel" placeholder="Ej.: 381 555 1234"><small id="error-telefono" class="error"></small></div>
+    <div class="campo"><label for="direccion">Dirección de entrega</label><input id="direccion" type="text" placeholder="Calle, número y localidad"><small id="error-direccion" class="error"></small></div>
+    <div class="campo"><label for="mensaje">Mensaje (opcional)</label><textarea id="mensaje" rows="3" maxlength="180" placeholder="Dejanos alguna indicación..."></textarea><small id="contador-mensaje" class="contador">0/180</small></div>
+    <button id="boton-confirmar" class="boton principal ancho" type="submit">Confirmar pedido →</button>
+    <div id="cargando" class="cargando" hidden><span class="spinner"></span> Estamos preparando tu pedido...</div>
+    <p id="mensaje-exito" class="exito" hidden></p>
+  </form>
+</section>
+</main>
+<footer><a class="logo" href="#inicio">🐾 Mundo <b>Patitas</b></a><p>Un mundo de cariño para cada patita.</p><small>Proyecto educativo · Laboratorio de Programación · 2026</small></footer>
+<div id="contenedor-toasts" class="toasts" aria-live="polite"></div>
+</body>
+</html>
